@@ -259,6 +259,25 @@
   .topbar a:hover{color:#fff}
   @media(max-width:760px){.topbar .hide-m{display:none}.topbar{font-size:11.5px}}
   footer{padding:64px 0 44px}
+
+  /* ===== enterprise wave 2 (2026-08-11) — 넘버링·CTA밴드·기업형 푸터 ===== */
+  body{counter-reset:sec}
+  .eyebrow{counter-increment:sec}
+  .eyebrow:after{content:"— 0" counter(sec);color:#9db3a4;font-weight:600;letter-spacing:.14em;font-size:11px}
+  .ctaband{background:
+      radial-gradient(90% 130% at 85% 0%, rgba(189,230,160,.16) 0%, transparent 60%),
+      linear-gradient(135deg,#0f3520 0%,var(--navy) 50%,var(--navy2) 100%);
+      color:#fff;padding:64px 0;text-align:center}
+  .ctaband h2{color:#fff;font-size:clamp(24px,3vw,36px);letter-spacing:-.03em;margin-bottom:12px}
+  .ctaband p{color:var(--mist);font-size:16px;max-width:60ch;margin:0 auto 26px}
+  .fcols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:36px}
+  .fcol h5{color:#fff;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:14px;font-weight:700}
+  .fcol ul{list-style:none;margin:0;padding:0}
+  .fcol li{margin-bottom:8px}
+  .fcol a{color:#9db3a4}
+  .fcol a:hover{color:var(--lime)}
+  @media(max-width:880px){.fcols{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.fcols{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -515,6 +534,15 @@
   </div>
 </section>
 
+<section class="ctaband">
+  <div class="wrap">
+    <h2>Ready to trial a grade on your line?</h2>
+    <p>Tell us your rubber type and process — or your resin and target — and we match the right grade
+    and send a free 1–2 kg trial sample with TDS.</p>
+    <a class="btn" href="#contact">Request a Free Sample <span class="ar">→</span></a>
+  </div>
+</section>
+
 <footer>
   <div class="wrap fgrid">
     <div>
@@ -522,9 +550,49 @@
       <b>IL SHIN CHEMICAL CO., LTD.</b><br>
       Non-silicone, water-based rubber process chemicals · Since 1987
     </div>
-    <div>
-      <a href="mailto:sales@ischem-global.com">sales@ischem-global.com</a> · +82-54-955-7611~3<br>
-      English: www.ischem-global.com · 한국어: <a href="http://www.ischem.co.kr/" target="_blank" rel="noopener">www.ischem.co.kr</a> · ISO 9001 / 14001
+    <div class="fcols" style="flex:1 1 100%;margin-top:26px">
+      <div class="fcol">
+        <h5>Rubber Process Chemicals</h5>
+        <ul>
+          <li><a href="#products">HR-908 — Mandrel release (ACM/AEM)</a></li>
+          <li><a href="#products">NEWMOL-A — Release (EPDM/SBR/NBR)</a></li>
+          <li><a href="#products">HS-50R — Extrusion release</a></li>
+          <li><a href="#products">RS-620 — Anti-tack</a></li>
+          <li><a href="#products">RC-25 — Surface cleaner</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h5>Performance Additives</h5>
+        <ul>
+          <li><a href="#products">Flame retardants — 12 grades</a></li>
+          <li><a href="#products">Antistatic agents — 12 grades</a></li>
+        </ul>
+        <h5 style="margin-top:20px">Company</h5>
+        <ul>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#process">Where we fit your line</a></li>
+          <li><a href="http://www.ischem.co.kr/" target="_blank" rel="noopener">한국어 · Korean site</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h5>Applications</h5>
+        <ul>
+          <li><a href="#applications">Automotive &amp; industrial hose</a></li>
+          <li><a href="#applications">Tire &amp; CMB compounding</a></li>
+          <li><a href="#applications">Molded rubber &amp; footwear</a></li>
+          <li><a href="#applications">Belts &amp; technical goods</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:sales@ischem-global.com">sales@ischem-global.com</a></li>
+          <li>Tel +82-54-955-7611~3</li>
+          <li>Fax +82-54-955-7614</li>
+          <li>FOB Busan · free trial samples</li>
+          <li>ISO 9001 / 14001 · Innobiz</li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="wrap fbot">
