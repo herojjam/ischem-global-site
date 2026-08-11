@@ -60,6 +60,9 @@
   "sameAs": ["http://www.ischem.co.kr/"]
 }
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
     --navy:#123c22; --navy2:#1c5331; --teal:#3c8f52; --teal-d:#2f7544;
@@ -233,9 +236,43 @@
   .n svg,.ic svg{width:26px;height:26px;display:block}
   .ic{color:var(--teal)}
   .prodhead-art{display:block;margin:0 auto 4px;color:var(--teal)}
+
+  /* ===== enterprise polish (2026-08-11) — 타이포·톤 정제, 사실관계 무변경 ===== */
+  body{font-family:'Inter',-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Malgun Gothic',sans-serif}
+  h1,h2,h3,h4,.brand,.fact b,.btn{font-family:'Manrope','Inter',-apple-system,'Malgun Gothic',sans-serif}
+  .hero h1{font-size:clamp(34px,4.6vw,58px);letter-spacing:-.035em;line-height:1.07}
+  .hero p{font-size:clamp(16px,1.55vw,19px)}
+  .stitle{font-size:clamp(28px,3.4vw,42px);letter-spacing:-.032em}
+  .eyebrow{font-size:11.5px;letter-spacing:.26em}
+  .lead{font-size:17px}
+  .btn{border-radius:7px;letter-spacing:.01em}
+  .btn:hover{transform:none;box-shadow:0 6px 18px rgba(60,143,82,.34)}
+  .val:hover,.prod:hover,.app:hover{transform:translateY(-2px)}
+  .val,.prod{border-radius:12px}
+  .fact b{font-variant-numeric:tabular-nums;font-size:34px}
+  .hero:after{content:"";position:absolute;right:-18%;top:-35%;width:72%;height:130%;
+    background:radial-gradient(closest-side,rgba(189,230,160,.13),transparent 72%);pointer-events:none;z-index:0}
+  .topbar{background:#0b2415;color:#c8d8cc;font-size:12.5px;font-weight:500}
+  .topbar .tbw{display:flex;justify-content:space-between;align-items:center;padding-top:9px;padding-bottom:9px;gap:14px}
+  .topbar .tl{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+  .topbar a{color:var(--lime);transition:.2s}
+  .topbar a:hover{color:#fff}
+  @media(max-width:760px){.topbar .hide-m{display:none}.topbar{font-size:11.5px}}
+  footer{padding:64px 0 44px}
 </style>
 </head>
 <body>
+
+<div class="topbar">
+  <div class="wrap tbw">
+    <div class="tl"><span>Il Shin Chemical Co., Ltd. — Global Sales &amp; Export</span></div>
+    <div class="tl">
+      <span class="hide-m">ISO 9001 / 14001</span>
+      <a href="mailto:sales@ischem-global.com">sales@ischem-global.com</a>
+      <span class="hide-m">+82-54-955-7611~3</span>
+    </div>
+  </div>
+</div>
 
 <header id="hdr">
   <input type="checkbox" id="mnav" aria-hidden="true" tabindex="-1">
