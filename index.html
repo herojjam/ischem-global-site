@@ -421,9 +421,9 @@
       </div>
       <div class="prod rv">
         <div class="code">HS-50R</div>
-        <h3>Release Agent — Rubber Hose Extrusion</h3>
-        <p>Water-based, nonionic release agent for the extrusion of rubber hose — effective in both high- and low-pressure extrusion processes. Dilute Water : HS-50R = 90 : 10.</p>
-        <ul><li>Excellent lubricating / releasing property</li><li>Clean surface with excellent gloss after vulcanization</li><li>Does not affect the physical properties of rubber</li><li>Non-corrosive to machines and metal parts</li></ul>
+        <h3>Release Agent — Rubber Extrusion &amp; Mold</h3>
+        <p>Water-based, nonionic release agent for rubber processing — extrusion of rubber hose (high- and low-pressure; dilute Water : HS-50R = 90 : 10) and mold release for natural and synthetic rubbers.</p>
+        <ul><li>Excellent lubricating / releasing property</li><li>Clean surface with excellent gloss after vulcanization</li><li>Mold release: apply undiluted, sprayed onto the mold before each molding cycle</li><li>Does not affect the physical properties of rubber</li><li>Non-corrosive to machines and metal parts</li></ul>
       </div>
       <div class="prod rv">
         <div class="code">RS-620</div>
@@ -605,16 +605,26 @@
     <h2 class="stitle rv">Request a free sample, TDS, or distributor partnership</h2>
     <p class="lead rv">Tell us your product, line and current release/anti-tack product — we'll match the right grade and send a free trial sample.</p>
     <div class="cgrid rv">
-      <form class="form" action="mailto:sales@ischem-global.com" method="post" enctype="text/plain">
+      <form class="form" id="inquiryForm">
         <label>Name</label><input name="Name" required />
         <label>Company</label><input name="Company" required />
         <label>Country</label><input name="Country" />
         <label>Email</label><input type="email" name="Email" required />
         <label>Product of interest</label>
-        <select name="Product"><option>HR-908</option><option>NEWMOL-A</option><option>HS-50R</option><option>RS-620</option><option>RC-25</option><option>Distributor partnership</option></select>
+        <select name="Product"><option>HR-908</option><option>NEWMOL-A</option><option>HS-50R</option><option>RS-620</option><option>RC-25</option><option>Flame retardants</option><option>Antistatic agents</option><option>Distributor partnership</option></select>
         <label>Message</label><textarea name="Message"></textarea>
         <div style="margin-top:16px"><button class="btn" type="submit">Send Inquiry</button></div>
+        <p style="color:var(--muted);font-size:12.5px;margin-top:10px">This opens your email app with the inquiry pre-filled. If nothing opens, simply email us at <a href="mailto:sales@ischem-global.com">sales@ischem-global.com</a>.</p>
       </form>
+      <script>
+      document.getElementById('inquiryForm').addEventListener('submit',function(e){
+        e.preventDefault();
+        var f=this,g=function(n){var el=f.elements[n];return el&&el.value?el.value.trim():''};
+        var subject='Website inquiry — '+g('Product')+' — '+g('Company');
+        var body='Name: '+g('Name')+'\nCompany: '+g('Company')+'\nCountry: '+g('Country')+'\nEmail: '+g('Email')+'\nProduct of interest: '+g('Product')+'\n\n'+g('Message');
+        window.location.href='mailto:sales@ischem-global.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+      });
+      </script>
       <div class="cinfo">
         <p><b>Email</b><a href="mailto:sales@ischem-global.com">sales@ischem-global.com</a></p>
         <p><b>Tel</b>+82-54-955-7611~3</p>
